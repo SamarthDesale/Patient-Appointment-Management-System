@@ -1,0 +1,124 @@
+
+/* ========== GLOBAL STYLES ========== */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Smooth transitions for all elements */
+* {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Page container spacing */
+.container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* ========== NAVBAR ========== */
+.navbar {
+    background: linear-gradient(90deg, #004e92, #000428);
+    padding: 0.6rem 1rem;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #fff !important;
+}
+
+.navbar-nav .nav-link {
+    color: #dfe6f1 !important;
+    font-weight: 500;
+    padding: 0.5rem 0.9rem;
+    border-radius: 8px;
+}
+
+.navbar-nav .nav-link:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff !important;
+}
+
+/* ========== BUTTONS ========== */
+.btn-primary {
+    background: linear-gradient(90deg, #004e92, #000428);
+    border: none;
+    color: white;
+    font-weight: 500;
+    border-radius: 8px;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(90deg, #005fc7, #001d3d);
+    transform: scale(1.04);
+}
+
+.btn-danger:hover {
+    transform: scale(1.04);
+}
+
+.btn {
+    padding: 0.45rem 1.1rem;
+    border-radius: 8px;
+}
+
+/* ========== FORMS ========== */
+form label {
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+}
+
+form .form-control {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: none;
+}
+
+form .form-control:focus {
+    border-color: #004e92;
+    box-shadow: 0 0 5px rgba(0, 78, 146, 0.5);
+}
+
+/* ========== TABLES ========== */
+table {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 78, 146, 0.08);
+}
+
+/* ========== CARDS & DASHBOARD ========== */
+.card {
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+.card-header {
+    background: linear-gradient(90deg, #004e92, #000428);
+    color: white;
+    font-weight: 500;
+}
+
+/* ========== FOOTER ========== */
+footer {
+    background: #000428;
+    color: #dfe6f1;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* ========== ANIMATIONS ========== */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
